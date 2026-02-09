@@ -116,4 +116,4 @@ tools/gen_command_tree.py --openapi schemas/openapi.json --out schemas/command_t
 cargo build
 ```
 
-Note: `schemas/openapi.json` is intentionally not committed (it contains example strings that can trip GitHub secret scanning).
+Note: GitHub secret scanning may flag some example strings in `schemas/openapi.json` as credentials (false positive).
